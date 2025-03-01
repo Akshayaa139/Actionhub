@@ -1,0 +1,163 @@
+.settings-container {
+    padding: 2rem;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/474x/8b/96/2a/8b962a0b2e689fdc834c3ff6d43c822a.jpg');
+  }
+  
+  .settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .settings-header h2 {
+    color: #1e293b;
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+  
+  .settings-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .settings-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .settings-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .settings-section h3 {
+    color: #334155;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  
+  .setting-item:last-child {
+    border-bottom: none;
+  }
+  
+  .setting-item label {
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.975rem;
+  }
+  
+  .setting-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #3b82f6;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .setting-item input[type="text"],
+  .setting-item input[type="email"],
+  .setting-item select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  .setting-item select {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    color: #475569;
+    background-color: white;
+    cursor: pointer;
+    min-width: 150px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1em;
+  }
+  
+  .setting-item select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  
+  .save-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .save-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .save-button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .settings-container {
+      background-color: #0f172a;
+    }
+  
+    .settings-content {
+      background: #1e293b;
+    }
+  
+    .settings-header h2 {
+      color: #f1f5f9;
+    }
+  
+    .settings-section h3 {
+      color: #e2e8f0;
+      border-bottom-color: #334155;
+    }
+  
+    .setting-item {
+      border-bottom-color: #334155;
+    }
+  
+    .setting-item label {
+      color: #cbd5e1;
+    }
+  
+    .setting-item select {
+      background-color: #0f172a;
+      border-color: #334155;
+      color: #e2e8f0;
+    }
+  
+    .setting-item select:focus {
+      border-color: #3b82f6;
+    }
+  }

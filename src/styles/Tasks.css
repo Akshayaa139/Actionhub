@@ -1,0 +1,214 @@
+.tasks-container {
+    padding: 2rem;
+    background-color: #f5f7fb;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/474x/8b/96/2a/8b962a0b2e689fdc834c3ff6d43c822a.jpg')
+}
+  
+  .tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tasks-header h2 {
+    color: #1e293b;
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+  
+  .tasks-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasks-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: white;
+    color: #475569;
+    cursor: pointer;
+  }
+  
+  .tasks-list {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .task-item {
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: white;
+    transition: all 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .task-header h4 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .task-description {
+    color: #64748b;
+    margin-bottom: 1rem;
+  }
+  
+  .task-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+  
+  .task-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    padding: 0.25rem 0.75rem;
+    background-color: #f1f5f9;
+    color: #475569;
+    border-radius: 16px;
+    font-size: 0.75rem;
+  }
+  
+  .add-task-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-task-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .priority-high { border-left: 4px solid #ef4444; }
+  .priority-medium { border-left: 4px solid #f59e0b; }
+  .priority-low { border-left: 4px solid #10b981; }
+  
+  .status-pending { background-color: #fff3e0; color: #f57c00; }
+  .status-in-progress { background-color: #e3f2fd; color: #1976d2; }
+  .status-completed { background-color: #e8f5e9; color: #388e3c; }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .tasks-container {
+      background-color: #0f172a;
+    }
+    
+    .tasks-content {
+      background: #1e293b;
+    }
+    
+    .task-item {
+      background: #1e293b;
+      border-color: #334155;
+    }
+    
+    .task-header h4 {
+      color: #f1f5f9;
+    }
+    
+    .task-description {
+      color: #94a3b8;
+    }
+    
+    .tag {
+      background-color: #334155;
+      color: #e2e8f0;
+    }
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group.full-width {
+    grid-column: span 2;
+  }
+  
+  .modal-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  .primary-button {
+    background: #4a90e2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  
+  .secondary-button {
+    background: #f0f2f5;
+    color: #2c3e50;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  
