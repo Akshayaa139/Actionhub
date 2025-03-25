@@ -52,7 +52,7 @@ The project also incorporates **SDG (Sustainable Development Goals)** principles
 
 ## Video Demo
 
-A video demonstration of the project is available to showcase its features and functionality. [[Watch the Demo](https://youtu.be/zxtPYQEKKs8)](#) *(Replace with your video link)*
+A video demonstration of the project is available to showcase its features and functionality. [[Watch the Demo](https://youtu.be/zxtPYQEKKs8)](#)
 
 ---
 
